@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to top of the page */
+  min-height: 100vh;
+  overflow-y: scroll; /* Enables scroll on the main page */
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px; /* Added space at the bottom */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.mic-section {
+  margin: 20px 0;
+}
+
+.mic-button {
+  background: #fff;
+  color: #6a11cb;
+  border: none;
+  font-size: 3rem;
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mic-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.hint {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 90%;
+  height: 200px;
+  margin: 20px 0;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  resize: none;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+textarea:focus {
+  outline: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.control-button {
+  background: #6a11cb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.control-button:hover {
+  background: #2575fc;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #ffdf6c;
+}

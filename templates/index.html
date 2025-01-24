@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice2Text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎙️ Real-Time Voice to Text Generator</h1>
+        </header>
+        <main>
+            <div class="mic-section">
+                <button id="start-recording" class="mic-button">🎙️</button>
+                <p class="hint">Click to start recording</p>
+            </div>
+            <textarea id="transcription" placeholder="Your text will appear here..." readonly></textarea>
+            <div class="controls">
+                <button id="copy" onclick="copyText()" class="control-button">Copy</button>
+            </div>
+        </main>
+        <footer>
+            <p>Contact Developer:</p>
+            <ul>
+                <li><a href="mailto:arunkumar847@gmail.com">📧 Email</a></li>
+                <li><a href="https://www.linkedin.com/in/arun-kumar-jangam-870224246/" target="_blank">🔗 LinkedIn</a></li>
+                <li><a href="tel:+916301677200">📞 Phone</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
